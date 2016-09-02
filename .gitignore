@@ -1,0 +1,7 @@
+# Created by .ignore support plugin (hsz.mobi)
+.gitignore
+.idea/DjangoCN.iml
+.idea/misc.xml
+.idea/modules.xml
+.idea/workspace.xml
+DjangoCN/__pycache__/
