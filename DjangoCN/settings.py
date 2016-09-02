@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'User',
     'Spider',
     'Manage',
+    'Home',
 ]
 
 MIDDLEWARE = [
