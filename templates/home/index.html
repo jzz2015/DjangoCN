@@ -1,12 +1,126 @@
+{% load staticfiles %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Django中国官方博客</title>
-    <style type="text/css" href="{{ STATIC_URL }}css/semantic.min.css"></style>
+    <link rel="icon" href="{% static 'images/logo.ico' %}"/>
+    <link rel="stylesheet" href="{% static 'css/semantic.min.css' %}" />
+    <script type="text/javascript" src="{% static 'js/semantic.min.js' %}"></script>
+    <style>
+        .navbgcolor {
+            background-color: #346547;
+            color: #ffffff;
+            height:40px;
+            line-height:40px;
+            border-radius: 4px;
+        }
+    </style>
 </head>
 <body>
-<h1 style="color: green">这是论坛首页</h1>
-<img src="{% static 'images/logo.jpg' %}" alt="img"/>
+<div class="ui attached menu">
+    <div class="header item"><h3><span style="color: #346547;">Django中国官方博客</span></h3></div>
+    <a class="active item" href="/"><i class="home icon"></i> 首页 </a>
+    <div class="ui simple dropdown item">
+        文档教程
+        <i class="dropdown icon"></i>
+        <div class="menu">
+            <a class="item"><i class="tag icon"></i>Django教程</a>
+            <a class="item"><i class="tag icon"></i>Flask教程</a>
+            <a class="item"><i class="tag icon"></i>Tornado教程</a>
+            <a class="item"><i class="tag icon"></i>常用第三方库</a>
+            <a class="item"><i class="tag icon"></i>Web基础教学</a>
+            <a class="item"><i class="globe icon"></i>Web安全</a>
+        </div>
+    </div>
+    <a class="item" href="#">开源代码 </a>
+    <a class="item" href="#">留言问答 </a>
+    <a class="item" href="#">任务分发 </a>
+    <a class="item" href="#">工具类 </a>
+    <a class="item" href="#">关于本站 </a>
+    <div class="right menu">
+        <div class="ui category search item">
+            <div class="ui transparent icon input">
+                <input class="prompt" placeholder="搜索..." type="text">
+                <i class="search link icon"></i>
+            </div>
+            <div class="results"></div>
+        </div>
+        <a class="item">登陆</a>
+        <a class="item">注册</a>
+    </div>
+</div>
+<div class="ui container">
+    <br>
+    <div class="ui segment">
+        <h1 class="ui header">Django Introduction</h1>
+  <img class="ui small left floated image" src="{% static 'images/text-image.png' %}">
+  <p>Django是一个开放源代码的Web应用框架，由Python写成。采用了MVC的框架模式，即模型M，视图V和控制器C。它最初是被开发来用于管理劳伦斯出版集团旗下的一些以新闻内容为主的网站的，即是CMS（内容管理系统）软件。并于2005年7月在BSD许可证下发布。这套框架是以比利时的吉普赛爵士吉他手Django Reinhardt来命名的。</p>
+  <img class="ui small right floated image" src="{% static 'images/text-image.png' %}">
+  <p>Django(发音：[`dʒæŋɡəʊ]) 是用python语言写的开源web开发框架(open source web framework)，它鼓励快速开发,并遵循MVC设计。Django遵守BSD版权，初次发布于2005年7月, 并于2008年9月发布了第一个正式版本1.0 。</p>
+   <p>由于Django在近年来的迅速发展，应用越来越广泛，被著名IT开发杂志SD Times评选为2013 SD Times 100，位列“API、库和框架”分类第6位，被认为是该领域的佼佼者。</p>
+</div>
+    <h3 class="navbgcolor header">&nbsp;推荐阅读</h3>
+    <a class="ui pointing basic label">文章分类：</a>
+  <a class="ui red label">安全攻防</a>|
+<a class="ui orange label">代码审核</a>|
+<a class="ui yellow label">优化</a>|
+<a class="ui olive label">Linux</a>|
+<a class="ui green label">服务器配置</a>|
+<a class="ui teal label">系统升级</a>|
+<a class="ui blue label">功能开发</a>|
+<a class="ui violet label">插件开发</a>|
+<a class="ui purple label">自动化</a>|
+<a class="ui pink label">异步处理</a>|
+<a class="ui brown label">多线程</a>|
+<a class="ui grey label">死锁</a>|
+<a class="ui black label">重构</a>
+    <div class="ui divider"></div>
+  <div class="ui two column grid">
+      <div class="column">
+          <p>Django是一个开放源代码的Web应用框架，由Python写成。</p>
+          <div class="ui divider"></div>
+          <p>Django是一个开放源代码的Web应用框架，由Python写成。</p>
+          <div class="ui divider"></div>
+          <p>Django是一个开放源代码的Web应用框架，由Python写成。</p>
+          <div class="ui divider"></div>
+          <p>Django是一个开放源代码的Web应用框架，由Python写成。</p>
+          <div class="ui divider"></div>
+          <p>Django是一个开放源代码的Web应用框架，由Python写成。</p>
+          <div class="ui divider"></div>
+      </div>
+      <div class="column">
+          <p>Django是一个开放源代码的Web应用框架，由Python写成。</p>
+          <div class="ui divider"></div>
+          <p>Django是一个开放源代码的Web应用框架，由Python写成。</p>
+          <div class="ui divider"></div>
+          <p>Django是一个开放源代码的Web应用框架，由Python写成。</p>
+          <div class="ui divider"></div>
+          <p>Django是一个开放源代码的Web应用框架，由Python写成。</p>
+          <div class="ui divider"></div>
+          <p>Django是一个开放源代码的Web应用框架，由Python写成。</p>
+          <div class="ui divider"></div>
+      </div>
+  </div>
+  <h3 class="navbgcolor header">&nbsp;技术攻略</h3>
+    <a class="ui pointing basic label">文章分类：</a>
+  <a class="ui red label">Red</a>|
+<a class="ui orange label">Orange</a>|
+<a class="ui yellow label">Yellow</a>|
+<a class="ui olive label">Olive</a>|
+    <div class="ui divider"></div>
+    <div class="ui small images">
+  <img src="{% static 'images/image.png' %}">
+  <img src="{% static 'images/image.png' %}">
+  <img src="{% static 'images/image.png' %}">
+  <img src="{% static 'images/image.png' %}">
+</div>
+  <div class="ui divider"></div>
+
+</div>
+<div class="ui black vertical footer segment">
+    <div style="float: right; height: 50px; line-height: 50px;">Django中国版权所有@2010-2016</div>
+</div>
+</div>
 </body>
 </html>
