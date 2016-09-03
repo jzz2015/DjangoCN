@@ -1,23 +1,19 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>UserInterface</title>
-</head>
-<body>
-<h1 style="color: red">This is User Index</h1>
-</body>
-</html> -->
 {% load staticfiles %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>user page</title>
+    <title>login</title>
     <link rel="icon" href="{% static 'images/logo.ico' %}"/>
     <link rel="stylesheet" href="{% static 'css/semantic.min.css' %}" />
+
+    <link rel="stylesheet" href="{% static 'css/styley.css' %}" />
     <script type="text/javascript" src="{% static 'js/semantic.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/home/register.js' %}"></script>
     <style>
+        body{
+            font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
+        }
         .navbgcolor {
             background-color: #346547;
             color: #ffffff;
@@ -51,24 +47,34 @@
     <a class="item" href="#">工具类 </a>
     <a class="item" href="#">关于本站 </a>
     <div class="right menu">
-        <div class="ui category search item">
-            <div class="ui transparent icon input">
-                <input class="prompt" placeholder="搜索..." type="text">
-                <i class="search link icon"></i>
-            </div>
-            <div class="results"></div>
-        </div>
-        <a class="item">登陆</a>
-        <a class="item">注册</a>
+        <a class="item">register</a>
     </div>
 </div>
 <div class="ui container">
-	   
-	    
+     <div class='register-table'>
+        <form class="ui form">
+            <div class="field">
+                <label>name</label>
+                <input name="name" placeholder="press in your name" type="text">
+            </div>
+            <div class="field">
+                <label>password</label>
+                <input name="password" placeholder="length between 8-20" type="password">
+            </div>
+            <div class="ui primary submit button">Submit</div>
+            <div class="ui error message"></div>
+            <div class="field">
+                <a href="/register">not registered?do it now! </a>
+            </div>
+        </form>
+    </div>
+       
 </div>
 
+<div class="absloutefooter">
 <div class="ui black vertical footer segment">
 	<div style="float: right; height: 50px; line-height: 50px;">Django中国版权所有@2010-2016</div>
+</div>
 </div>
 
 </body>

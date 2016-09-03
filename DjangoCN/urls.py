@@ -26,4 +26,10 @@ urlpatterns = [
     url(r'^$', home_views.index),
     url(r'^user$', user_views.index),
     url(r'^manage$', manage_views.index),
+
+
+    url(r'^register$',home_views.register),
+    url(r'^login$',home_views.login),
+    url(r'^writeblogs$',user_views.writeblog),
+    url(r'^viewblog$',user_views.viewblog),
 ]

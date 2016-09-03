@@ -80,9 +80,9 @@ WSGI_APPLICATION = 'DjangoCN.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'DjangoCN',
+        'NAME': 'ajzz',
         'USER': 'root',
-        'PASSWORD': 'zhou347742',
+        'PASSWORD': 'yhp41163',
         'HOST': 'localhost',
         'PORT': '3306',
     }

@@ -7,3 +7,9 @@ def index(request):
 
 def search(request):
     return "Searching..."
+
+def register(request):
+	return render(request,'home/register.html')
+
+def login(request):
+	return render(request,'home/login.html')

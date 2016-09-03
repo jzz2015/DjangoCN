@@ -1,0 +1,143 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>UserInterface</title>
+</head>
+<body>
+<h1 style="color: red">This is User Index</h1>
+</body>
+</html> -->
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>register</title>
+    <link rel="icon" href="{% static 'images/logo.ico' %}"/>
+    <link rel="stylesheet" href="{% static 'css/semantic.min.css' %}" />
+
+    <link rel="stylesheet" href="{% static 'css/styley.css' %}" />
+    <script type="text/javascript" src="{% static 'js/semantic.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/home/register.js' %}"></script>
+    <style>
+        body{
+            font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
+        }
+        .navbgcolor {
+            background-color: #346547;
+            color: #ffffff;
+            height:40px;
+            line-height:40px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+<div class="ui attached menu">
+    <div class="header item">
+    	<h3><span style="color: #346547;">Django中国官方博客</span></h3>
+    </div>
+    <a class="active item" href="/"><i class="home icon"></i> 首页 </a>
+    <div class="ui simple dropdown item">
+        文档教程
+        <i class="dropdown icon"></i>
+        <div class="menu">
+            <a class="item"><i class="tag icon"></i>Django教程</a>
+            <a class="item"><i class="tag icon"></i>Flask教程</a>
+            <a class="item"><i class="tag icon"></i>Tornado教程</a>
+            <a class="item"><i class="tag icon"></i>常用第三方库</a>
+            <a class="item"><i class="tag icon"></i>Web基础教学</a>
+            <a class="item"><i class="globe icon"></i>Web安全</a>
+        </div>
+    </div>
+    <a class="item" href="#">开源代码 </a>
+    <a class="item" href="#">留言问答 </a>
+    <a class="item" href="#">任务分发 </a>
+    <a class="item" href="#">工具类 </a>
+    <a class="item" href="#">关于本站 </a>
+    <div class="right menu">
+        <a class="item" href="">login</a>
+    </div>
+</div>
+<div class="ui container">
+     <div class='register-table'>
+        <form class="ui form">
+            <div class="field">
+                <label>nickname</label>
+                <input name="name" placeholder="press in your name" type="text">
+            </div>
+            <div class="field">
+                <label>password</label>
+                <input name="password" placeholder="length between 8-20" type="password">
+            </div>
+            <div class="field">
+                <label>condirm-password</label>
+                <input name="confirm-password" placeholder="press in you psd again" type="password">
+            </div>
+            <div class="field">
+                <label>e-mail</label>
+                <input name="email" placeholder="press in you email" type="text">
+            </div>
+            <div class="field">
+                <div class="ui checkbox">
+                  <input class="hidden" tabindex="0" type="checkbox">
+                  <label>I agree to the user protocol</label>
+                </div>
+            </div>
+            <div class="ui primary submit button">Submit</div>
+            <div class="ui error message"></div>
+        </form>
+    </div>
+    
+
+    <!-- <div id="register-info" class="register-info">
+        <form class="ui form">
+            <div class="user-info-div">
+                <span class="userinfo-before">用户昵称:</span>
+                <div class="fl ui input">
+                    <input type="text" name="nickname" />
+                </div>
+                <span class="userinfo-behind"> </span>
+            </div>
+            <div class="user-info-div">
+                <span class="userinfo-before">设置密码:</span>
+                <div class="fl ui input">
+                    <input type="password" name="password" />
+                </div>
+                <span class="userinfo-behind">  8-20位字符 </span>
+            </div>
+            <div class="user-info-div">
+                <span class="userinfo-before">确认密码:</span>
+                 <div class="fl ui input">
+                    <input type="password" name="confirm-password" />
+                </div>
+                <span class="userinfo-behind">请再次输入密码 </span>
+            </div>
+            <div class="user-info-div">
+                <span class="userinfo-before">验证邮箱:</span>
+                <div class="fl ui input">
+                    <input type="text" name="mail" />
+                </div>
+                <span class="userinfo-behind"> 请输入您的常用邮箱</span>
+            </div>
+            <div id="user-protocol">
+                <span class="userinfo-before"> </span>
+                <input id="user-protocol-input" type="checkbox" name="user-protocol" />
+                <span >我已阅读并同意<a>《用户注册协议》</a> </span>
+            </div>
+            <div >
+                <input  id="button-register" class="ui primary submit button" type="submit" name="submit" value="立即注册"  />
+            </div>
+        </form>
+    </div> -->	    
+</div>
+
+<div class="absloutefooter">
+<div class="ui black vertical footer segment">
+	<div style="float: right; height: 50px; line-height: 50px;">Django中国版权所有@2010-2016</div>
+</div>
+</div>
+
+</body>
+</html>

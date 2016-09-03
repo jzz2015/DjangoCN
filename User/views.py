@@ -5,3 +5,9 @@ from django.shortcuts import render
 
 def index(request):
     return render(request, 'user/index.html')
+
+def writeblog(request):
+    return render(request, 'user/writeblogs.html')
+
+def viewblog(request):
+    return render(request, 'user/viewblog.html')

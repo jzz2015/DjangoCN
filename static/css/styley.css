@@ -1,0 +1,104 @@
+/*.register-info{
+	width: 600px;
+	height: 800px;
+	margin: 0 auto;
+	border: solid 1px #eee;
+	padding-top: 50px;
+}
+.user-info-div,#user-protocol{
+	display: inline-block;
+	width: 400px;
+	height: 40px;
+	margin-left: 100px;
+	margin-bottom: 20px;
+}
+#user-protocol + div input{
+	width: 180px;
+	height: 40px;
+	border-radius: 6px;
+	border: none;
+	margin: 0 auto;
+	margin-left: 175px;
+	font-size: 20px;
+	color: #fff;
+	background-color: #092F22;
+}
+.userinfo-before{
+	width: 80px;
+	height: 40px;
+	float: left;
+	display: inline-block;
+	font-size: 16px;
+	line-height: 40px;
+}
+.user-info-div .fl{
+	padding-top: 3px;
+
+}
+.userinfo-behind{
+	width: 120px;
+	height: 40px;
+	padding-left: 5px;
+	float: left;
+	display: inline-block;
+}
+#user-protocol input{
+
+	vertical-align: text-bottom;
+}*/
+/*#user-protocol + div + div{
+	margin:10px 0 0 180px;
+	font-size: 16px;
+}*/
+body{
+	height: 100%;
+	/*position: relative;*/
+	padding-bottom: 66px;
+}
+.register-table{
+	width:450px;
+	height: auto;
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 50px 100px;
+	margin-top: 50px;
+	border: solid 1px #eee;
+}
+.absloutefooter{
+	width: 100%;
+	height: 66px;
+/*	position:absolute;
+	bottom:0;*/
+	position: fixed;
+	bottom: 0;
+	background-color: #fff;
+}
+.left-user-info{
+	width: 350px;
+	min-height: 600px;
+	padding-top: 50px;
+	float: left;
+	border: solid 1px #eee;
+}
+.view-blog-body{
+	max-width: 750px;
+	min-height: 600px;
+	float: right;
+	padding: 50px 20px 0 20px;
+	border: solid 1px #eee;
+}
+.ui .card{
+	margin: 0 auto;
+}
+.view-blog-body .event{
+	max-width: 700px;
+	font-size: 16px;
+	border: solid 1px #eee;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	padding: 0 10px;
+
+}
+.view-blog-body .event .content div{
+	margin:5px 0;
+}

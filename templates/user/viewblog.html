@@ -1,23 +1,18 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>UserInterface</title>
-</head>
-<body>
-<h1 style="color: red">This is User Index</h1>
-</body>
-</html> -->
 {% load staticfiles %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>user page</title>
+    <title>viewblogs</title>
     <link rel="icon" href="{% static 'images/logo.ico' %}"/>
     <link rel="stylesheet" href="{% static 'css/semantic.min.css' %}" />
+
+    <link rel="stylesheet" href="{% static 'css/styley.css' %}" />
     <script type="text/javascript" src="{% static 'js/semantic.min.js' %}"></script>
     <style>
+        body{
+            font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
+        }
         .navbgcolor {
             background-color: #346547;
             color: #ffffff;
@@ -63,13 +58,53 @@
     </div>
 </div>
 <div class="ui container">
-	   
-	    
+    <div class='left-user-info'>
+     	<div class="ui card">
+		  <div class="image">
+		    <img src="{% static 'images/user.png' %}">
+		  </div>
+		  <div class="content">
+		    <a class="header">Kristy</a>
+		    <div class="meta">
+		      <span class="date">Joined in 2013</span>
+		    </div>
+		    <div class="description">JZZ is an art director living in New York. </div>
+		  </div>
+		  <div class="extra content">
+		    <a><i class="user icon"></i> 22 Fans </a>
+		  </div>
+		</div>
+    </div>
+    <div class="view-blog-body">
+
+		<div class="event">
+		    <div class="content">
+		       	<div class="summary"> <a href="">welcome to DjangoCN</a> <span class="date">3 days ago </span>
+		       	</div>
+		       	<div class="extra text">words to say hello bla bla </div>
+		       	<div class="meta">
+		       	</div>
+		    </div>
+		</div>
+
+	    <div class="event">
+		    <div class="content">
+		       	<div class="summary"><a>Joe Henderson</a> posted <a href="">blogname</a> <span class="date">3 days ago </span>
+		       	</div>
+		       	<div class="extra text">Ours is a life of constant reruns. We're always circling back to where we'd we started, then starting all over again. Even if we don't run extra laps that day, we surely will come back for more of the same another day soon. </div>
+		       	<div class="meta">
+		         	<a class="like"><i class="like icon"></i> 5 Likes </a>
+		       	</div>
+		    </div>
+		</div>
+    </div>
+       
 </div>
 
-<div class="ui black vertical footer segment">
-	<div style="float: right; height: 50px; line-height: 50px;">Django中国版权所有@2010-2016</div>
+<div class="absloutefooter">
+	<div class="ui black vertical footer segment">
+		<div style="float: right; height: 50px; line-height: 50px;">Django中国版权所有@2010-2016</div>
+	</div>
 </div>
-
 </body>
 </html>
